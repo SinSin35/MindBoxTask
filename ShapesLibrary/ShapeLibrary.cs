@@ -44,6 +44,7 @@
             return Math.Sqrt(p * (p - _side1) * (p - _side2) * (p - _side3));
         }
 
+        // Возможно стоит вынести в отдельный класс, чтобы не нарушался SRP
         public bool IsRectangular()
         {
             double[] sides = [_side1 * _side1, _side2 * _side2, _side3 * _side3];
